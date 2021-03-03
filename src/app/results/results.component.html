@@ -1,0 +1,10 @@
+<div class="results">
+  <mat-card-title>Results</mat-card-title>
+  <mat-list class="answers">
+    <div *ngFor="let a of answers.values" [ngClass]="{correct: a.correct}">
+      <mat-list-item>{{a.value}}</mat-list-item>
+      <mat-divider></mat-divider>
+    </div>
+  </mat-list>
+  <a mat-stroked-button routerLink="/welcome" color="accent">Choose another quiz</a>
+</div>

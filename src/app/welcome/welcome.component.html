@@ -1,0 +1,12 @@
+<div class="welcome mat-typography">
+  <h1>Welcome to QuizLand</h1>
+  <div *ngFor="let q of quiz">
+    <mat-card class="quiz-select">
+      <mat-card-title>{{q.label}}</mat-card-title>
+      <mat-card-subtitle>{{q.description}}</mat-card-subtitle>
+      <mat-card-actions>
+        <a routerLink="/{{q.name}}" mat-stroked-button color="accent">Select this quiz</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
